@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace C_HelloWorld_WinformGUI
 {
-    public partial class Form1 : Form
+    public partial class F_MAIN : Form
     {
-        public Form1()
+        public F_MAIN()
         {
             InitializeComponent();
         }
 
+        private void BTN_HELLO_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello World!", "Hello", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
